@@ -1,0 +1,51 @@
+### Flutter / Dart
+.dart_tool/
+.packages
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+.fvm/
+
+build/
+coverage/
+
+# Dépendances lock (choix courant en app mobile)
+pubspec.lock
+
+### IDE / Editor
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+### Android
+android/.gradle/
+android/local.properties
+android/key.properties
+**/*.jks
+**/*.keystore
+
+### iOS / macOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.flx
+
+macos/Pods/
+macos/Flutter/Flutter.framework
+macos/Flutter/Flutter.podspec
+macos/Flutter/Generated.xcconfig
+
+### Windows / Linux
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/
+
+### Misc
+*.log
+*.swp
+.DS_Store
+Thumbs.db
+
