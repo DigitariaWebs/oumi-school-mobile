@@ -1,14 +1,14 @@
-# Oumi?School (Flutter)
+# Oumi’School (Flutter)
 
-Application mobile (Android & iOS) centr�e sur l?accompagnement parental et l?IEF (Instruction En Famille).
+Application mobile (Android & iOS) centrée sur l’accompagnement parental et l’IEF (Instruction En Famille).
 
 ## Objectifs (MVP)
 
 - Authentification parent (UI)
-- Cr�ation / gestion de profils enfants (UI)
+- Création / gestion de profils enfants (UI)
 - Tableau de bord parent (UI)
 - Espace enfant + curriculum + suivi de progression (UI)
-- Assistant p�dagogique (UI uniquement)
+- Assistant pédagogique (UI uniquement)
 - Ressources (UI)
 - Tutorat (optionnel, UI uniquement)
 
@@ -19,20 +19,20 @@ Application mobile (Android & iOS) centr�e sur l?accompagnement parental et l?
 - Clean Architecture (Presentation / Application / Domain / Data)
 - Riverpod
 - GoRouter
-- Freezed + JSON Serializable (mod�les pr�ts)
-- Dio (client API ? non utilis� dans le MVP UI)
+- Freezed + JSON Serializable (modèles prêts)
+- Dio (client API – non utilisé dans le MVP UI)
 - intl (i18n ready)
 - Google Fonts (Inter)
 
 ## Lancer le projet
 
 1. Installer Flutter (stable) + SDK Android/iOS.
-2. � la racine du repo :
+2. À la racine du repo :
 
 ```bash
 flutter pub get
 flutter run
 ```
 
-> Ce repo contient uniquement des �crans UI + mock data, sans backend.
+> Ce repo contient uniquement des écrans UI + mock data, sans backend.
 
