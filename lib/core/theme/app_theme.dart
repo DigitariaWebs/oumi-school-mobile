@@ -12,6 +12,8 @@ class AppTheme {
       useMaterial3: true,
       colorScheme: scheme,
       visualDensity: VisualDensity.standard,
+      // Compat: certaines versions Flutter n’exposent pas `fontFamily` sur `copyWith`.
+      fontFamily: GoogleFonts.inter().fontFamily,
     );
 
     // Inter partout (calme, très lisible, parfait pour un produit éducatif).
@@ -26,7 +28,6 @@ class AppTheme {
     );
 
     return base.copyWith(
-      fontFamily: GoogleFonts.inter().fontFamily,
       textTheme: textTheme,
       scaffoldBackgroundColor: AppColors.gray50,
       appBarTheme: AppBarTheme(
@@ -35,7 +36,7 @@ class AppTheme {
         elevation: 0,
         titleTextStyle: textTheme.titleLarge?.copyWith(color: scheme.onSurface),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.white,
         elevation: 0,
         surfaceTintColor: Colors.transparent,
@@ -63,17 +64,17 @@ class AppTheme {
       ),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
-          minimumSize: const Size.fromHeight(48),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
           textStyle: textTheme.labelLarge,
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          minimumSize: const Size.fromHeight(48),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
           textStyle: textTheme.labelLarge,
           side: BorderSide(color: scheme.outline),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
         ),
       ),
       dividerTheme: DividerThemeData(color: scheme.outline.withValues(alpha: 0.8)),

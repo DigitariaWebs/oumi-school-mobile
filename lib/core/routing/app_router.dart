@@ -81,12 +81,8 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       final isOnboarding = loc.startsWith(AppRoutes.onboarding);
       final isAuth = loc.startsWith(AppRoutes.login) || loc.startsWith(AppRoutes.register);
 
-      // Après le splash, on redirige selon l’état mock.
-      if (isSplash) {
-        if (!session.hasOnboarded) return AppRoutes.onboarding;
-        if (!session.isAuthenticated) return AppRoutes.login;
-        return AppRoutes.dashboard;
-      }
+      // On laisse le splash s’afficher (navigation gérée dans l’écran).
+      if (isSplash) return null;
 
       // Si pas d’onboarding, on force l’onboarding (sauf splash).
       if (!session.hasOnboarded && !isOnboarding) {
